@@ -9,20 +9,30 @@ public class Task2 {
                 "the greatest common divisor:");
         int n1 = scanner.nextInt();
         int n2 = scanner.nextInt();
+        int n3 = 0;
 
-        int d = 0;
-        int temp = 0;
 
-        if (n1 < n2) {
-            temp = n1;
-            n1 = n2;
-            n2 = temp;
+        while (n2 != 0) {
+            n3 = n2;
+            n2 = n1 % n2;
+            n1 = n3;
         }
-        for (d = n1;(n1 % d != 0 && n2 % d != 0); d--) {
+        System.out.println(n3);
 
-        }
-        System.out.println("The greatest divider of " +n1+
-                " and "+n2+" is "+d);
+//        int d = 0;
+//        int temp = 0;
+//
+//        if (n1 < n2) {
+//            temp = n1;
+//            n1 = n2;
+//            n2 = temp;
+//        }
+//        for (d = n1;(n1 % d != 0 && n2 % d != 0); d--) {
+//
+//        }
+//        System.out.println("The greatest divider of " +n1+
+//                " and "+n2+" is "+d);
+//    }
+
     }
-
 }

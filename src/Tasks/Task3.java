@@ -2,6 +2,7 @@ package Tasks;
 import java.util.Scanner;
 public class Task3 {
     public void run() {
+
         String txtA, txtB = "";
         System.out.println("Enter the text to palindrome check:");
         Scanner scanner = new Scanner(System.in);
